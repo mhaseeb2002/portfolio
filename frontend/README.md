@@ -17,4 +17,4 @@ Cloud Engineer & Kubernetes Specialist
 
 - 📧 Email: mhaseeb.bee20seecs@seecs.edu.pk
 - 💼 LinkedIn: [muhammad-haseeb-613670212](https://www.linkedin.com/in/muhammad-haseeb-613670212/)
-- 🐙 GitHub: [@mhaseeb2002](https://github.com/mhaseeb2002)
+- 🐙 GitHub: [@haseebnizami](https://github.com/haseebnizami)
