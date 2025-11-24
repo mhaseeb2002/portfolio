@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with Next.js 14, showcasing my work
 
 ## 🛠️ Tech Stack
 
-- **Next.js 14** (App Router with static export)
+- **Next.js 14**
 - **React 18** with TypeScript
 - **Tailwind CSS** for styling
 - **React Icons** for iconography
