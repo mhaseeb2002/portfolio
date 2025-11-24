@@ -1,46 +1,44 @@
-'use client'
-import { useState, useEffect } from 'react'
-import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi'
-import { useTheme } from './ThemeProvider'
+"use client";
+import { useState, useEffect } from "react";
+import { FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
+import { useTheme } from "./ThemeProvider";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const { theme, toggleTheme } = useTheme()
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Education', href: '#education' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Certifications', href: '#certifications' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
-  ]
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Education", href: "#education" },
+    { name: "Skills", href: "#skills" },
+    { name: "Certifications", href: "#certifications" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'glass dark:glass-dark shadow-lg' 
-          : 'bg-transparent'
+        scrolled ? "glass dark:glass-dark shadow-lg" : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a 
-              href="#home" 
+            <a
+              href="#home"
               className="text-xl font-bold text-gradient hover:scale-110 transition-transform inline-block flex items-center gap-2"
             >
-              <span className="text-2xl">☸️</span>
-              <span style={{ fontStyle: 'italic' }}>Muhammad Haseeb</span>
+              <span className="text-2xl">⎈</span>
+              <span style={{ fontStyle: "italic" }}>Muhammad Haseeb</span>
             </a>
           </div>
 
@@ -64,7 +62,7 @@ export default function Header() {
               className="p-2.5 rounded-xl glass dark:glass-dark hover:scale-110 transition-transform shadow-md"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? (
+              {theme === "dark" ? (
                 <FiSun className="w-5 h-5 text-yellow-500" />
               ) : (
                 <FiMoon className="w-5 h-5 text-indigo-600" />
@@ -105,5 +103,5 @@ export default function Header() {
         )}
       </nav>
     </header>
-  )
+  );
 }
