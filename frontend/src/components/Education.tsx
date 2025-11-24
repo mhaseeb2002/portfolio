@@ -1,10 +1,13 @@
-'use client'
-import Image from 'next/image'
-import { FiAward, FiCalendar, FiMapPin } from 'react-icons/fi'
+"use client";
+import Image from "next/image";
+import { FiAward, FiCalendar, FiMapPin } from "react-icons/fi";
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 bg-white dark:bg-slate-900 section-gradient">
+    <section
+      id="education"
+      className="py-20 bg-white dark:bg-slate-900 section-gradient"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -52,7 +55,9 @@ export default function Education() {
                       <div className="space-y-2 mb-4">
                         <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                           <FiMapPin className="w-4 h-4" />
-                          <span>National University of Sciences & Technology (NUST)</span>
+                          <span>
+                            National University of Sciences & Technology (NUST)
+                          </span>
                         </div>
                         <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                           <FiCalendar className="w-4 h-4" />
@@ -61,9 +66,10 @@ export default function Education() {
                       </div>
                       <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
                         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                          Graduated with a focus on signal processing and machine learning. 
-                          Published research in deep learning for healthcare applications. 
-                          Transitioned to cloud engineering during final year.
+                          Graduated with a focus on signal processing and
+                          machine learning. Published research in deep learning
+                          for healthcare applications. Transitioned to cloud
+                          engineering during final year.
                         </p>
                       </div>
                     </div>
@@ -71,7 +77,10 @@ export default function Education() {
                 </div>
               </div>
 
-              <div className="relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div
+                className="relative animate-slide-up"
+                style={{ animationDelay: "0.2s" }}
+              >
                 <div className="md:flex items-center justify-between">
                   <div className="md:w-5/12 mb-4 md:mb-0 md:text-right md:pr-8 order-2 md:order-1">
                     <div className="glass dark:glass-dark p-8 rounded-2xl card-hover">
@@ -83,8 +92,8 @@ export default function Education() {
                       </p>
                       <div className="space-y-3 text-gray-700 dark:text-gray-300">
                         <p>
-                          Published research on applying deep learning techniques to medical imaging 
-                          and diagnostic systems.
+                          Published research on applying deep learning
+                          techniques to medical imaging and diagnostic systems.
                         </p>
                         <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
                           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm">
@@ -106,12 +115,20 @@ export default function Education() {
                     <div className="glass dark:glass-dark p-6 rounded-2xl">
                       <div className="grid grid-cols-2 gap-4">
                         <div className="text-center p-4 rounded-xl bg-gradient-to-br from-purple-500/10 to-pink-500/10">
-                          <div className="text-3xl font-bold text-gradient mb-1">3.5+</div>
-                          <div className="text-xs text-gray-600 dark:text-gray-400">GPA</div>
+                          <div className="text-3xl font-bold text-gradient mb-1">
+                            3.26+
+                          </div>
+                          <div className="text-xs text-gray-600 dark:text-gray-400">
+                            GPA
+                          </div>
                         </div>
                         <div className="text-center p-4 rounded-xl bg-gradient-to-br from-indigo-500/10 to-blue-500/10">
-                          <div className="text-3xl font-bold text-gradient mb-1">Top 10%</div>
-                          <div className="text-xs text-gray-600 dark:text-gray-400">Class Rank</div>
+                          <div className="text-3xl font-bold text-gradient mb-1">
+                            Top 10%
+                          </div>
+                          <div className="text-xs text-gray-600 dark:text-gray-400">
+                            Class Rank
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -123,5 +140,5 @@ export default function Education() {
         </div>
       </div>
     </section>
-  )
+  );
 }
